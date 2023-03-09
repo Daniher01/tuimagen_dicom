@@ -14,8 +14,8 @@
   "MySQL" : {
     "EnableIndex" : true,
     "Host" : "mysql",
-    "Database" : "caisOrthancDB",
-    "Username" : "userOrthanc",
+    "Database" : "tuimagenDB",
+    "Username" : "userTuimagen",
     "Password" : "PACSPACSPACS",
     "EnableSsl" : false,     
     "SslVerifyServerCertificates": true, 
