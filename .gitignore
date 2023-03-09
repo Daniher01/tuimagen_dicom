@@ -1,0 +1,9 @@
+# Arvhivos de persistencia de datos
+OrthancDB
+orthanc_db
+
+# Archivos de imagenes dicom
+OrthancStorage
+
+# Variables de entorno
+.env
