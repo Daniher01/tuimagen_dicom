@@ -26,7 +26,7 @@ window.config = {
         target: '_self',
         rel: 'noopener noreferrer',
         className: 'header-brand',
-        href: '/',
+        href: location.href,
         style: {
           display: 'block',
           background: 'url(/logo.png)',
