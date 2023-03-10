@@ -24,7 +24,11 @@ services:
     volumes:
       - ./Orthanc/orthanc.json:/etc/orthanc/orthanc.json:ro
       - ./Orthanc/OrthancStorage:/var/lib/orthanc/db/
-    restart: always
+    environment:
+        Database: "${DB_MYSQL_NAME}"
+        Username: "${DB_MYSQL_USER}"
+        Password: "${DB_MYSQL_USER_PASSWORD}"
+
     networks:
       - pacs
 
