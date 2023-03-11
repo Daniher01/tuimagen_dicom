@@ -1,9 +1,29 @@
 version: "3"
 services:
+  proxy:
+    image: jc21/nginx-proxy-manager:latest  
+    ports:
+      - 80:80
+      - 81:81
+      - 443:443
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+    networks:
+      - pacs  
+  # mariadb:
+  #   image: jc21/mariadb-aria:10.4
+  #   enviroment:
+  #     MYSQL_ROOT_PASSWORD: 'npm'
+  #     MYSQL_DATABASE: 'npm'
+  #     MYSQL_USER: 'npm'
+  #     MYSQL_PASSWORD: 'npm'
+  #   volumes:
+  #     - ./data/mysql:/var/lib/mysql      
   db:
     container_name: mysql
     image: mysql:5.7.35
-    ports: ["3306:3306"]
+    ports: ["33065:3306"]
     volumes: ["./Orthanc/OrthancDB:/var/lib/mysql"]
 
     environment:

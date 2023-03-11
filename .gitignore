@@ -1,6 +1,8 @@
 # Arvhivos de persistencia de datos
 OrthancDB
 orthanc_db
+data
+letsencrypt
 
 # Archivos de imagenes dicom
 OrthancStorage
