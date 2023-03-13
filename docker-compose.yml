@@ -1,5 +1,16 @@
 version: "3"
 services:
+  web:
+    container_name: app_web
+    build: ./app_gestion
+    ports:
+      - 5000:5000
+    environment:
+       FLASK_DEBUG: 0  
+    volumes:
+      - ./app_gestion:/app  
+    networks:
+      - pacs   
   proxy:
     image: jc21/nginx-proxy-manager:latest  
     ports:
@@ -10,16 +21,7 @@ services:
       - ./proxy/data:/data
       - ./proxy/letsencrypt:/etc/letsencrypt
     networks:
-      - pacs  
-  # mariadb:
-  #   image: jc21/mariadb-aria:10.4
-  #   enviroment:
-  #     MYSQL_ROOT_PASSWORD: 'npm'
-  #     MYSQL_DATABASE: 'npm'
-  #     MYSQL_USER: 'npm'
-  #     MYSQL_PASSWORD: 'npm'
-  #   volumes:
-  #     - ./data/mysql:/var/lib/mysql      
+      - pacs     
   db:
     container_name: mysql
     image: mysql:5.7.35
