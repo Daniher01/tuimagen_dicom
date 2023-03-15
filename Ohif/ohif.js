@@ -1,3 +1,6 @@
+const envVars = document.getElementById('env-vars').textContent;
+console.log(envVars); // 123456
+
 window.config = {
   // default: '/'
   routerBasename: '/',
@@ -16,6 +19,13 @@ window.config = {
         thumbnailRendering: 'wadors',
         enableStudyLazyLoad: true,
         supportsFuzzyMatching: true,
+	  	  requestOptions: {
+            auth: "tuimagen:tuimagen",
+            logRequests: true,
+            logResponses: false,
+            logTiming: true,
+            requestFromBrowser: true,
+        }
       },
     ],
   },
