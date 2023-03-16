@@ -9,3 +9,6 @@ OrthancStorage
 
 # Variables de entorno
 .env
+
+#Variables node
+node_modules
