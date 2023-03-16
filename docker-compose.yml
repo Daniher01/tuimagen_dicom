@@ -27,8 +27,6 @@ services:
         Database: "${DB_MYSQL_NAME}"
         Username: "${DB_MYSQL_USER}"
         Password: "${DB_MYSQL_USER_PASSWORD}"
-        login_user: "tuimagen"
-        login_password: "1d3@sPr0"
 
     networks:
       - pacs
@@ -41,11 +39,10 @@ services:
     volumes:
       - ./Ohif/nginx_ohif.conf:/etc/nginx/conf.d/default.conf:ro
       - ./Ohif/ohif.js:/usr/share/nginx/html/app-config.js:ro
-      - ./Ohif/index.html:/usr/share/nginx/html/index.html:ro
       - ./Ohif/logo.png:/usr/share/nginx/html/logo.png:ro
+
     environment:
         APP_CONFIG: /usr/share/nginx/html/app-config.js
-        OHIF_AUTH: "tuimagen:tuimagen" 
     restart: always
     networks:
       - pacs

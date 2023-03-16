@@ -48,9 +48,9 @@
   "SslMinimumProtocolVersion" : 4,
   "SslVerifyPeers" : false,
   "SslTrustedClientCertificates" : "trustedClientCertificates.pem",
-  "AuthenticationEnabled" : true,
+  "AuthenticationEnabled" : false,
     "RegisteredUsers" : {
-    "${login_user}" : "${login_password}"
+    "tuimagen" : "tuimagen"
   },
   "DicomTlsEnabled" : false,
   "DicomTlsRemoteCertificateRequired" : true,

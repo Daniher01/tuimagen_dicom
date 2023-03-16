@@ -17,7 +17,7 @@ window.config = {
         enableStudyLazyLoad: true,
         supportsFuzzyMatching: true,
 	  	  requestOptions: {
-            auth: "tuimagen:1d3@sPr0",
+            auth: "tuimagen:tuimagen",
             logRequests: true,
             logResponses: false,
             logTiming: true,
