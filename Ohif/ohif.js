@@ -1,6 +1,3 @@
-const envVars = document.getElementById('env-vars').textContent;
-console.log(envVars); // 123456
-
 window.config = {
   // default: '/'
   routerBasename: '/',
@@ -20,7 +17,7 @@ window.config = {
         enableStudyLazyLoad: true,
         supportsFuzzyMatching: true,
 	  	  requestOptions: {
-            auth: "tuimagen:tuimagen",
+            auth: "tuimagen:1d3@sPr0",
             logRequests: true,
             logResponses: false,
             logTiming: true,

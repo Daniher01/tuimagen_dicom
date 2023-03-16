@@ -27,8 +27,8 @@ services:
         Database: "${DB_MYSQL_NAME}"
         Username: "${DB_MYSQL_USER}"
         Password: "${DB_MYSQL_USER_PASSWORD}"
-        login_user: "${LOGIN_USER}"
-        login_password: "${LOGIN_PASSWORD}"
+        login_user: "tuimagen"
+        login_password: "1d3@sPr0"
 
     networks:
       - pacs
