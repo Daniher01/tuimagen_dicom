@@ -4,7 +4,8 @@
   "description": "server para poder subir archivos dicom a orthanc",
   "main": "src/index",
   "scripts": {
-    "dev": "nodemon start src/index.js"
+    "dev": "nodemon start src/index.js",
+    "nodeOptions": "--max-old-space-size=4096"
   },
   "author": "Daniel Hernanez <Daniher02@gmail.com>",
   "license": "MIT",

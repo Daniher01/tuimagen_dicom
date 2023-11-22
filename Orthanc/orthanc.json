@@ -9,8 +9,13 @@
   "LuaScripts" : [
   ],
   "Plugins" : [ 
-    "/usr/share/orthanc/plugins", "/usr/local/share/orthanc/plugins"
+    "/usr/share/orthanc/plugins", "/usr/local/share/orthanc/plugins",
+    "Worklist"
   ],
+  "Worklist": {
+    "Enabled": true,
+    "AET": "ORTHANC"
+ },
   "MySQL" : {
     "EnableIndex" : true,
     "Host" : "mysql",
