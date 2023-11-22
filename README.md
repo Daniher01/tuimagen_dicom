@@ -8,7 +8,7 @@ Es un servidor de DICOM ligero, gratuito y de codigo abierto para imagenes medic
 
 #### Clonar el repositorio
 
-`git clone https://github.com/Daniher01/ohif-orthanc.git \n`
+`git clone https://github.com/Daniher01/tuimagen_dicom.git \n`
 `cd ohif-orthanc`
 `docker-compose up -d`
 
