@@ -1,5 +1,5 @@
 {
-  "Name" : "TU IMAGEN",
+  "Name" : "TUIMAGEN",
   "StorageDirectory" : "/var/lib/orthanc/db",
   "IndexDirectory" : "/var/lib/orthanc/db",
   "StorageCompression" : true,
