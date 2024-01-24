@@ -17,7 +17,7 @@ services:
 
   pacs:
     container_name: orthanc
-    image: jodogne/orthanc-plugins
+    image: jodogne/orthanc-plugins:latest
     ports:
       - 4242:4242
     volumes:
