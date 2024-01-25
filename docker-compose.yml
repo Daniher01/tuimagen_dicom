@@ -7,9 +7,9 @@ services:
     volumes: ["./Orthanc/OrthancDB:/var/lib/mysql"]
 
     environment:
-            MYSQL_DATABASE: "${DB_MYSQL_NAME}"
-            MYSQL_USER: "${DB_MYSQL_USER}"
-            MYSQL_PASSWORD: "${DB_MYSQL_USER_PASSWORD}"
+            MYSQL_DATABASE: "tuimagenDB"
+            MYSQL_USER: "userTuimagen"
+            MYSQL_PASSWORD: "PACSPACSPACS"
             MYSQL_ROOT_PASSWORD: "${DB_MYSQL_ROOT_PASSWORD}"
     restart: "always"
     networks:

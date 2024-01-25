@@ -19,9 +19,9 @@
   "MySQL" : {
     "EnableIndex" : true,
     "Host" : "mysql",
-    "Database" : "${Database}",
-    "Username" : "${Username}",
-    "Password" : "${Password}",
+    "Database" : "tuimagenDB",
+    "Username" : "userTuimagen",
+    "Password" : "PACSPACSPACS",
     "EnableSsl" : false,     
     "SslVerifyServerCertificates": true, 
     "SslCACertificates": "",        
